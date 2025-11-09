@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Ranjan Kumar - Resume</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Google Font 'Inter' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the 'Inter' font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937; /* A dark gray, close to black */
+            background-color: #f3f4f6; /* Light gray bg to see the 'page' */
+        }
+        /* Define the specific blue color from the image */
+        .text-resume-blue {
+            color: #2563EB; /* This is Tailwind's blue-600, a close match */
+        }
+        .bg-resume-blue {
+            background-color: #2563EB;
+        }
+        .icon-sm {
+            width: 1rem; /* 16px */
+            height: 1rem; /* 16px */
+            margin-right: 0.5rem; /* 8px */
+            flex-shrink: 0;
+        }
+        .section-title {
+            /* Adjusted size from text-lg to text-base and margin */
+            @apply text-base font-bold uppercase text-black border-b-2 border-black pb-1 mb-4;
+        }
+        
+        /* Print-specific styles */
+        @media print {
+            body {
+                background-color: #ffffff; /* White background for print */
+                margin: 0;
+                padding: 0;
+            }
+            .a4-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                border: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Container is slightly narrower, with no shadow or rounded corners for print -->
+    <div class="a4-container container mx-auto max-w-5xl p-10 md:p-12 bg-white my-8">
+        
+        <!-- === HEADER === -->
+        <!-- Profile picture div removed -->
+        <header class="flex justify-between items-start mb-8">
+            <!-- Left: Info -->
+            <div>
+                <!-- Scaled down text sizes -->
+                <h1 class="text-3xl lg:text-4xl font-bold text-black">RAVI RANJAN KUMAR</h1>
+                <p class="text-xl lg:text-2xl font-medium text-resume-blue mt-1">Engineering Student</p>
+                
+                <div class="mt-5 space-y-1.5 text-gray-700">
+                    <div class="flex items-center text-sm">
+                        <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.53-.213-1.02-.593-1.393l-2.4-2.4c-.38-.38-.863-.593-1.393-.593h-2.4c-.53 0-1.02.213-1.393.593l-2.4 2.4c-.38.38-.593.863-.593 1.393v1.372c0 .53-.213 1.02-.593 1.393l-2.4 2.4c-.38.38-.863-.593-1.393-.593H2.25z" />
+                        </svg>
+                        <span>+91 8709078136</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        <span>raviranjan8904@gmail.com</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <span>Linkedin</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                        <span>Patna, Bihar, 804451</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right: Profile Pic (REMOVED) -->
+        </header>
+
+        <!-- === MAIN CONTENT (2-Column Grid) === -->
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-x-12">
+            
+            <!-- === LEFT COLUMN === -->
+            <div class="md:col-span-2">
+                
+                <!-- SUMMARY -->
+                <section class="mb-6">
+                    <h2 class="section-title">Summary</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        I am an engineering student specializing in Electronic and Communication Engineering, with practical experience in project management and Salesforce development. My academic achievements include winning a college-level Smart India Hackathon and excelling in tech challenges. I'm seeking a full-time position to further develop my skillset and contribute to innovative projects.
+                    </p>
+                </section>
+
+                <!-- EXPERIENCE -->
+                <section class="mb-6">
+                    <h2 class="section-title">Experience</h2>
+                    
+                    <!-- Job 1 -->
+                    <div class="mb-5">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                            <h3 class="text-base font-semibold text-black">Managing Director</h3>
+                            <span class="text-xs text-gray-600 sm:mt-0">05/2024 - 07/2025</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-1.5">
+                            <p class="text-sm font-medium text-resume-blue">Invigo Educare Pvt Ltd</p>
+                            <span class="text-xs text-gray-600 flex items-center">
+                                <svg class="icon-sm -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Patna, Bihar
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2">A company focusing on educational solutions</p>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 pl-4">
+                            <li>Define a long-term company vision with the board</li>
+                            <li>Creates achievable annual plans for growth</li>
+                            <li>Scans market for new growth opportunities</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                            <h3 class="text-base font-semibold text-black">Salesforce Developer Intern</h3>
+                            <span class="text-xs text-gray-600 sm:mt-0">05/2024 - 07/2025</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-1.5">
+                            <p class="text-sm font-medium text-resume-blue">Smart-Internz</p>
+                            <span class="text-xs text-gray-600 flex items-center">
+                                <svg class="icon-sm -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Patna, Bihar
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2">An internship program focusing on Salesforce development</p>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 pl-4">
+                            <li>Built custom solutions and integrated Salesforce features to solve real-world business challenges</li>
+                            <li>Showcased technical skills and problem-solving through hands-on development tasks</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="mb-6">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <!-- Edu 1 -->
+                    <div class="mb-4">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                            <h3 class="text-base font-semibold text-black">B.Tech in Electronic and Communication Engineering</h3>
+                            <span class="text-xs text-gray-600 sm:mt-0">08/2022 - 05/2026</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
+                            <p class="text-sm font-medium text-resume-blue">Purnea College of Engineering</p>
+                            <span class="text-xs text-gray-600 flex items-center">
+                                <svg class="icon-sm -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Purnea, bihar
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                            <h3 class="text-base font-semibold text-black">High School</h3>
+                            <span class="text-xs text-gray-600 sm:mt-0">04/2020 - 03/2022</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
+                            <p class="text-sm font-medium text-resume-blue">CBSE</p>
+                            <span class="text-xs text-gray-600 flex items-center">
+                                <svg class="icon-sm -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Bihar
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- CERTIFICATION -->
+                <section class="mb-6">
+                    <h2 class="section-title">Certification</h2>
+                    <div class="space-y-2.5">
+                        
+                        <div class="pb-2.5 border-b border-dashed border-gray-300">
+                            <h3 class="text-sm font-semibold text-black">Advanced Prompt Engineering</h3>
+                            <p class="text-xs text-gray-600">~Simplilearn</p>
+                        </div>
+                        
+                        <div class="pb-2.5 border-b border-dashed border-gray-300">
+                            <h3 class="text-sm font-semibold text-black">Programming in C</h3>
+                            <p class="text-xs text-gray-600">~NPTEL</p>
+                        </div>
+
+                        <div class="pb-2.5 border-b border-dashed border-gray-300">
+                            <h3 class="text-sm font-semibold text-black">Salesforce Developer</h3>
+                            <p class="text-xs text-gray-600">~Smart Internz</p>
+                        </div>
+
+                        <div class="pb-2.5 border-b border-dashed border-gray-300">
+                            <h3 class="text-sm font-semibold text-black">Complete Placement Preparation course</h3>
+                            <p class="text-xs text-gray-600">~LMT</p>
+                        </div>
+
+                        <div class="pb-2.5 border-b border-dashed border-gray-300">
+                            <h3 class="text-sm font-semibold text-black">MS Office</h3>
+                            <p class="text-xs text-gray-600">~Infosys Springboard</p>
+                        </div>
+
+                        <div class="pb-2.5 border-b border-dashed border-gray-300">
+                            <h3 class="text-sm font-semibold text-black">Communicaton/Presentation/Soft Skill</h3>
+                            <p class="text-xs text-gray-600">~tcs ION</p>
+                        </div>
+
+                        <div class="pb-2.5">
+                            <h3 class="text-sm font-semibold text-black">Advance Diploma and typing</h3>
+                            <p class="text-xs text-gray-600">~STS Computer Edu</p>
+                        </div>
+
+                    </div>
+                    <!-- www.enhancv.com text from image removed as it's part of the footer -->
+                </section>
+
+                <!-- LANGUAGES -->
+                <section class="mb-6">
+                    <h2 class="section-title">Languages</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-sm font-semibold text-black">English</p>
+                            <div class="flex space-x-1 mt-1.5">
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-gray-300 rounded-full"></span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">Proficient</p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-black">Hindi</p>
+                            <div class="flex space-x-1 mt-1.5">
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-resume-blue rounded-full"></span>
+                                <span class="w-3.5 h-3.5 bg-gray-300 rounded-full"></span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">Proficient</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- === RIGHT COLUMN === -->
+            <div class="md:col-span-1">
+
+                <!-- KEY ACHIEVEMENTS -->
+                <section class="mb-6">
+                    <h2 class="section-title">Key Achievements</h2>
+                    <div class="flex items-start">
+                        <svg class="icon-sm text-resume-blue mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.27 1.135-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.23-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                        </svg>
+                        <div>
+                            <h3 class="text-sm font-semibold text-black">Academic Achievements</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed mt-1">
+                                Achieved top 10 position in Kimo.AI tech competition and won the college-level Smart India Hackathon (SIH) 2024
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SKILLS -->
+                <section class="mb-6">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="flex flex-wrap gap-1.5">
+                        <!-- Skills font size reduced to text-xs -->
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Gmail</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">GitHub</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Microsoft Office</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Mobile Devices</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Salesforce</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">VLSI</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Java</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">C/C++</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">JavaScript</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">HTML</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">CSS</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">React</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Node.js</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Express.js</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Git</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Visual Studio Code</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">MongoDB</span>
+                        <span class="bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-md text-xs font-medium">Arduino Uno</span>
+                    </div>
+                </section>
+
+                <!-- PROJECTS -->
+                <section class="mb-6">
+                    <h2 class="section-title">Projects</h2>
+                    
+                    <!-- Project 1 -->
+                    <div class="mb-5">
+                        <h3 class="text-base font-semibold text-black">Day Calculator website</h3>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-1.5 text-xs text-gray-600">
+                            <span>05/2024 - 07/2025</span>
+                            <span class="flex items-center">
+                                <svg class="icon-sm -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Remote
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2">A website that allows users to find day of the week for any given date</p>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 pl-4">
+                            <li>Instantly discover whether a date was a weekday, weekend, or holiday</li>
+                            <li>User-friendly calendar interface to select dates</li>
+                            <li>Works for dates in the past, present, or future</li>
+                            <li>Minimalistic design that is responsive on both desktop and mobile devices</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div>
+                        <h3 class="text-base font-semibold text-black">Smart India Hackathon project</h3>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-baseline mb-1.5 text-xs text-gray-600">
+                            <span>05/2024 - 07/2025</span>
+                            <span class="flex items-center">
+                                <svg class="icon-sm -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                                Remote
+                            </span>
+                        </div>
+                        <p class="text-xs text-gray-600 mb-2">Developed as part of the Smart India Hackathon to optimize academic scheduling</p>
+                        <ul class="list-disc list-inside text-sm text-gray-700 space-y-1 pl-4">
+                            <li>Identified conflicts with faculty availability, room allocation, or student batches</li>
+                            <li>Addressed issues with optimization of classrooms, labs, and projectors</li>
+                            <li>Reduced significant manual effort required to create and update timetables</li>
+                            <li>Incorporated flexibility to dynamically adjust schedules for events or cancellations</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- INTERESTS -->
+                <section class="mb-6">
+                    <h2 class="section-title">Interests</h2>
+                    <div class="flex items-start">
+                        <svg class="icon-sm text-resume-blue mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.205 4.791c.093-.09.22-.146.354-.146s.26.056.354.146l.708.707a.5.5 0 010 .707l-2.122 2.121-.707-.707 2.121-2.121zM3.795 4.791l.707.707-2.121 2.121-.707-.707 2.121-2.121a.5.5 0 01.707 0zM12 2.5a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2a.5.5 0 01.5-.5zm0 17a.5.5 0 01.5.5v2a.5.5 0 01-1 0v-2a.5.5 0 01.5-.5zM1.5 12a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5zm17 0a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5zM8.207 7.086l-1.414-1.414.707-.707 1.414 1.414-.707.707zM17.207 7.086l-.707-.707 1.414-1.414.707.707-1.414 1.414zM8.207 16.914l.707.707-1.414 1.414-.707-.707 1.414-1.414zM12 8a4 4 0 100 8 4 4 0 000-8zm0 6a2 2 0 110-4 2 2 0 010 4z" />
+                            <path d="M12 1.5a1.5 1.5 0 011.5 1.5v2.01a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2.01A1.5 1.5 0 0112 1.5zM12 19.5a1.5 1.5 0 011.5 1.5v2.01a.5.5 0 01-.5.5h-2a.5.5 0 01-.5-.5v-2.01a1.5 1.5 0 011.5-1.5zM20.5 10.5a.5.5 0 01.5.5v2.01a1.5 1.5 0 01-1.5 1.5h-2.01a.5.5 0 01-.5-.5v-2.01a.5.5 0 01.5-.5H19a1.5 1.5 0 011.5-1.5zM3.5 10.5a.5.5 0 01.5.5v2.01a1.5 1.5 0 01-1.5 1.5H.5a.5.5 0 01-.5-.5v-2.01a.5.5 0 01.5-.5H3A1.5 1.5 0 013.5 10.5z" />
+                        </svg>
+                        <div>
+                            <h3 class="text-sm font-semibold text-black">Programming and Competitions</h3>
+                            <p class="text-sm text-gray-700 leading-relaxed mt-1">
+                                Basic Programming with Arduino Uno and involvement in extracurricular competitions
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+        <!-- === FOOTER (REMOVED) === -->
+
+    </div>
+
+</body>
+</html>
